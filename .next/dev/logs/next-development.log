@@ -1,0 +1,457 @@
+[00:00:03.281] Server  LOG      ✓ Ready in 2.3s
+[00:00:06.368] Server  LOG      ○ Compiling / ...
+[00:00:10.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.806] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.807] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.807] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763963781173}
+[00:01:21.468] Server  LOG      ✓ Compiled in 123ms
+[00:01:27.149] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:27.432] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:27.432] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:27.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763963857851}
+[00:02:04.448] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763963894427}
+[00:02:04.448] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763963894433}
+[00:02:19.409] Server  LOG      ✓ Compiled in 510ms
+[00:03:33.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:33.997] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:33.998] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:03:33.998] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763963984428}
+[00:05:11.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:12.352] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:12.352] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:05:12.352] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763964082786}
+[00:41:26.864] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:27.099] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:41:27.099] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:41:27.099] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763966257650}
+[02:08:56.435] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
+[02:09:45.335] Server  LOG      ✓ Compiled in 197ms
+[02:09:46.444] Browser ERROR   ./components/hero-section.tsx:12:460
+Parsing ecmascript source code failed
+  10 |           </h1>
+  11 |           <p className="text-xl md:text-2xl mb-8 text-white/90">Explore millions of song lyrics from your favorite artists</p>
+> 12 |           <div class="max-w-2xl mx-auto relative"><input placeholder="Search for songs, artists, or lyrics..." class="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text"><button class="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button></div>
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+> 13 |         </div>
+     | ^^^^^^^^^
+  14 |       </div>
+  15 |     </section>
+  16 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:09:57.434] Browser ERROR   ./components/hero-section.tsx:13:422
+Parsing ecmascript source code failed
+  11 |           <p className="text-xl md:text-2xl mb-8 text-white/90">Explore millions of song lyrics from your favorite artists</p>
+  12 |           <div class="max-w-2xl mx-auto relative">
+> 13 |             <input placeholder="Search for songs, artists, or lyrics..." class="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text"><button class="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button></div>
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+> 14 |         </div>
+     | ^^^^^^^^^
+  15 |       </div>
+  16 |     </section>
+  17 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:02.442] Browser ERROR   ./components/hero-section.tsx:13:430
+Parsing ecmascript source code failed
+  11 |           <p className="text-xl md:text-2xl mb-8 text-white/90">Explore millions of song lyrics from your favorite artists</p>
+  12 |           <div class="max-w-2xl mx-auto relative">
+> 13 |             <input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text"><button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button></div>
+     |                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+> 14 |         </div>
+     | ^^^^^^^^^
+  15 |       </div>
+  16 |     </section>
+  17 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:12.436] Browser ERROR   ./components/hero-section.tsx:14:223
+Parsing ecmascript source code failed
+  12 |           <div class="max-w-2xl mx-auto relative">
+  13 |             <input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+> 14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button></div>
+     |                                                                                                                                                                                                                               ^
+> 15 |         </div>
+     | ^^^^^^^^^
+  16 |       </div>
+  17 |     </section>
+  18 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:15.445] Browser ERROR   ./components/hero-section.tsx:14:223
+Parsing ecmascript source code failed
+  12 |           <div className="max-w-2xl mx-auto relative">
+  13 |             <input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+> 14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button></div>
+     |                                                                                                                                                                                                                               ^
+> 15 |         </div>
+     | ^^^^^^^^^
+  16 |       </div>
+  17 |     </section>
+  18 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:20.441] Browser ERROR   ./components/hero-section.tsx:15:19
+Parsing ecmascript source code failed
+  13 |             <input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 15 |             </div>
+     |                   ^
+> 16 |         </div>
+     | ^^^^^^^^^
+  17 |       </div>
+  18 |     </section>
+  19 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:22.436] Browser ERROR   ./components/hero-section.tsx:15:17
+Parsing ecmascript source code failed
+  13 |             <input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 15 |           </div>
+     |                 ^
+> 16 |         </div>
+     | ^^^^^^^^^
+  17 |       </div>
+  18 |     </section>
+  19 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:25.435] Browser ERROR   ./components/hero-section.tsx:15:17
+Parsing ecmascript source code failed
+  13 |             <input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 15 |           </div>
+     |                 ^
+> 16 |         </div>
+     | ^^^^^^^^^
+  17 |       </div>
+  18 |     </section>
+  19 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:35.438] Browser ERROR   ./components/hero-section.tsx:15:17
+Parsing ecmascript source code failed
+  13 |             <nput placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 15 |           </div>
+     |                 ^
+> 16 |         </div>
+     | ^^^^^^^^^
+  17 |       </div>
+  18 |     </section>
+  19 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:10:37.435] Browser ERROR   ./components/hero-section.tsx:15:17
+Parsing ecmascript source code failed
+  13 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  14 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 15 |           </div>
+     |                 ^
+> 16 |         </div>
+     | ^^^^^^^^^
+  17 |       </div>
+  18 |     </section>
+  19 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:14.446] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:16.444] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:29.216] Server  ERROR    ⨯ ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+
+
+[02:11:29.333] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:30.344] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:30.464] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:31.329] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:31.586] Browser ERROR   uncaughtError: Error: ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+
+
+[02:11:31.760] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:31.859] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:11:58.432] Browser ERROR   ./components/hero-section.tsx:15:217
+Parsing ecmascript source code failed
+  13 |           <div className="max-w-2xl mx-auto relative">
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+> 15 |             <Button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</button>
+     |                                                                                                                                                                                                                         ^
+> 16 |           </div>
+     | ^^^^^^^^^^^
+  17 |         </div>
+  18 |       </div>
+  19 |     </section>
+
+Expected '</', got 'jsx text (
+          )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:12:17.444] Browser ERROR   ./components/hero-section.tsx:16:17
+Parsing ecmascript source code failed
+  14 |             <Input placeholder="Search for songs, artists, or lyrics..." className="w-full pl-6 pr-14 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 cursor-text" type="text">
+  15 |             <Button className="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap cursor-pointer">Search</Button>
+> 16 |           </div>
+     |                 ^
+> 17 |         </div>
+     | ^^^^^^^^^
+  18 |       </div>
+  19 |     </section>
+  20 |   )
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./components/hero-section.tsx
+    ./app/page.tsx
+[02:13:14.266] Server  LOG      ✓ Compiled in 157ms
+[02:13:15.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:13:16.444] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:13:16.444] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:13:16.444] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1763971766131}
+[02:51:38.352] Server  LOG      ✓ Compiled in 148ms
+[02:51:40.706] Server  LOG      ✓ Compiled in 78ms
