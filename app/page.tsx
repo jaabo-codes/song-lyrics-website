@@ -1,9 +1,7 @@
-import { Header } from "@/components/header"
+import { Header } from "@/app/header"
 import { HeroSection } from "@/components/hero-section"
 import { TrendingSection } from "@/components/trending-section"
 import { FeaturedSongs } from "@/components/featured-songs"
-import { GenreSection } from "@/components/genre-section"
-import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   return (
@@ -13,9 +11,7 @@ export default function HomePage() {
         <HeroSection />
         <TrendingSection />
         <FeaturedSongs />
-        <GenreSection />
       </main>
-      <Footer />
     </div>
   )
 }

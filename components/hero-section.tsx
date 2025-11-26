@@ -1,9 +1,8 @@
-import { Play, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-pink-500 via-purple-900 to-indigo-600 py-16">
+    <section className="relative bg-gradient-to-br from-pink-500 via-purple-900 to-indigo-600 py-16 pb-32">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
@@ -35,6 +34,9 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+      
+      {/* Gradient fade to white */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white dark:to-black"></div>
     </section>
   )
 }

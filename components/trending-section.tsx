@@ -3,11 +3,11 @@ import { TrendingUp, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const trendingItems = [
-  { rank: 1, title: "Blinding Lights", artist: "The Weeknd", plays: "2.5M", image: "/album-cover-1.png" },
-  { rank: 2, title: "Shape of You", artist: "Ed Sheeran", plays: "2.3M", image: "/album-cover-2.png" },
-  { rank: 3, title: "Someone Like You", artist: "Adele", plays: "2.1M", image: "/album-cover-3.png" },
-  { rank: 4, title: "Bohemian Rhapsody", artist: "Queen", plays: "1.9M", image: "/album-cover-four.png" },
-  { rank: 5, title: "Levitating", artist: "Dua Lipa", plays: "1.8M", image: "/album-cover-five.png" },
+  { rank: 1, title: "Blinding Lights", artist: "The Weeknd", plays: "2.5M", image: "./images/weeknd.jpg" },
+  { rank: 2, title: "Shape of You", artist: "Ed Sheeran", plays: "2.3M", image: "./images/edsharen.jpg" },
+  { rank: 3, title: "Someone Like You", artist: "Adele", plays: "2.1M", image: "./images/adele.jpeg" },
+  { rank: 4, title: "Bohemian Rhapsody", artist: "Queen", plays: "1.9M", image: "./images/bohemian.jpeg" },
+  { rank: 5, title: "Levitating", artist: "Dua Lipa", plays: "1.8M", image: "./images/dualipa.jpeg" },
 ]
 
 export function TrendingSection() {
