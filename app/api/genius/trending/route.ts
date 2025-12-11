@@ -4,21 +4,23 @@ export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const page = Number(searchParams.get("page") || 1);
 
-  try {
-    const res = await fetch(
-      `https://api.genius.com/search?q=top&page=${page}`,
-      {
-        headers: { Authorization: `Bearer ${process.env.GENIUS_ACCESS_TOKEN}` },
-        cache: "no-store",
-      }
-    );
+  const url = `https://api.genius.com/search?q=trending&page=${page}`;
 
-    if (!res.ok) return NextResponse.json([]);
+  try {
+    const res = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${process.env.GENIUS_ACCESS_TOKEN}`,
+      },
+      cache: "no-store",
+    });
 
     const data = await res.json();
 
-    const songs = data.response.hits.slice(0, 20).map((hit: any, index: number) => ({
-      rank: (page - 1) * 20 + index + 1,
+    if (!data.response?.hits) {
+      return NextResponse.json([]);
+    }
+
+    const songs = data.response.hits.map((hit: any) => ({
       id: hit.result.id,
       title: hit.result.full_title,
       artist: hit.result.primary_artist.name,
@@ -26,8 +28,8 @@ export async function GET(req: Request) {
     }));
 
     return NextResponse.json(songs);
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error(error);
     return NextResponse.json([]);
   }
 }

@@ -2,13 +2,9 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Inter } from "next/font/google";
-
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "700"],   // optional
-});
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/700.css";
 
 export const metadata: Metadata = {
   title: "OnlineSongsLyrics - Discover Your Favorite Song Lyrics",
@@ -40,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased ${inter.className}`}>
+      <body className={`font-inter antialiased `}>
         {children}
         <Analytics />
       </body>
