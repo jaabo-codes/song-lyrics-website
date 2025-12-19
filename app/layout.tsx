@@ -7,7 +7,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/700.css";
 
 export const metadata: Metadata = {
-  title: "OnlineSongsLyrics - Discover Your Favorite Song Lyrics",
+  title: "Online Songs Lyrics - Discover Your Favorite Song Lyrics",
   description: "Explore millions of lyrics from your favorite artists. Find, share, and enjoy music like never before.",
   generator: "v0.app",
   icons: {
