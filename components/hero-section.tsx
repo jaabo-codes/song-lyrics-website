@@ -5,7 +5,7 @@ export function HeroSection() {
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-bold">Discover Song Lyrics</h1>
         <div
-          className="relative overflow-hidden
+          className="relative  overflow-hidden
   bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-700
   text-white px-5 lg:px-20 rounded-3xl
   mt-6 flex justify-between h-[300px]"
