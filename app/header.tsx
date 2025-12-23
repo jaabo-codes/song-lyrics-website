@@ -8,7 +8,7 @@ export function Header() {
         sticky top-0 z-50
         bg-white/90 dark:bg-black/90
         backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-black/70
-        border-b border-zinc-200 dark:border-zinc-800
+        border-b border-zinc-200  dark:border-zinc-800
         transition-colors
       "
     >
