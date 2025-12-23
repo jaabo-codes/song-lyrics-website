@@ -1,26 +1,59 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import { Card } from "@/components/ui/card"
-import { TrendingUp, Play } from "lucide-react"
+import { Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const trendingItems = [
-  { rank: 1, title: "Blinding Lights", artist: "The Weeknd", plays: "2.5M", image: "./images/weeknd.jpg" },
-  { rank: 2, title: "Shape of You", artist: "Ed Sheeran", plays: "2.3M", image: "./images/edsharen.jpg" },
-  { rank: 3, title: "Someone Like You", artist: "Adele", plays: "2.1M", image: "./images/adele.jpeg" },
-  { rank: 4, title: "Bohemian Rhapsody", artist: "Queen", plays: "1.9M", image: "./images/bohemian.jpeg" },
-  { rank: 5, title: "Levitating", artist: "Dua Lipa", plays: "1.8M", image: "./images/dualipa.jpeg" },
-]
+interface TrendingSong {
+  id: number
+  title: string
+  artist: string
+  image: string
+  rank?: number
+}
 
 export function TrendingSection() {
+  const [trendingItems, setTrendingItems] = useState<TrendingSong[]>([])
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const fetchTrending = async () => {
+      setLoading(true)
+      try {
+        const res = await fetch("/api/genius/trending?page=1")
+        const data: TrendingSong[] = await res.json()
+
+        // Take only top 5 & add rank
+        const ranked = data.slice(0, 5).map((item, index) => ({
+          ...item,
+          rank: index + 1,
+        }))
+
+        setTrendingItems(ranked)
+      } catch (err) {
+        console.error("Failed to fetch trending songs", err)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchTrending()
+  }, [])
+
   return (
     <section className="py-16">
       <div className="container mx-auto px-6">
-        
+
         {/* Header */}
         <div className="mb-8 flex items-center justify-between">
-        <h2 className="text-3xl font-bold text-zinc-900 dark:text-white">
-              Trending Now
-            </h2>
-          <Button variant="link" className="text-pink-600 hover:text-pink-400 dark:text-pink-500">
+          <h2 className="text-3xl font-bold text-zinc-900 dark:text-white">
+            Trending Now
+          </h2>
+          <Button
+            variant="link"
+            className="text-pink-600 hover:text-pink-400 dark:text-pink-500"
+          >
             View All
           </Button>
         </div>
@@ -29,7 +62,7 @@ export function TrendingSection() {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-5">
           {trendingItems.map((item) => (
             <Card
-              key={item.rank}
+              key={item.id}
               className="
                 group cursor-pointer overflow-hidden 
                 bg-white border-zinc-200 
@@ -40,11 +73,11 @@ export function TrendingSection() {
               "
             >
               <div className="px-4">
-                
+
                 {/* Image */}
                 <div className="relative mb-3 aspect-square overflow-hidden rounded-lg">
                   <img
-                    src={item.image}
+                    src={item.image || "https://via.placeholder.com/300"}
                     alt={item.title}
                     className="h-full w-full object-cover transition-transform group-hover:scale-110"
                   />
@@ -59,10 +92,13 @@ export function TrendingSection() {
                     </Button>
                   </div>
 
-                  <span className="absolute left-2 top-2 flex h-8 w-8 items-center justify-center rounded-full 
+                  {/* Rank */}
+                  <span
+                    className="absolute left-2 top-2 flex h-8 w-8 items-center justify-center rounded-full 
                     bg-white/90 text-zinc-900 
                     dark:bg-black/70 dark:text-white 
-                    text-sm font-bold">
+                    text-sm font-bold"
+                  >
                     #{item.rank}
                   </span>
                 </div>
@@ -71,10 +107,15 @@ export function TrendingSection() {
                 <h3 className="mb-1 font-semibold text-zinc-900 dark:text-white leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-sm text-zinc-600 dark:text-gray-400">{item.artist}</p>
-                <p className="mt-1 text-xs text-zinc-500 dark:text-gray-500">{item.plays} plays</p>
-              </div>
+                <p className="text-sm text-zinc-600 dark:text-gray-400">
+                  {item.artist}
+                </p>
 
+                {/* Static plays (API usually doesn't provide this) */}
+                <p className="mt-1 text-xs text-zinc-500 dark:text-gray-500">
+                  Trending
+                </p>
+              </div>
             </Card>
           ))}
         </div>
