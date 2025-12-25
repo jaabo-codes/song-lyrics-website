@@ -728,7 +728,7 @@ export function CountryCodeSelect({
       <SelectTrigger className="w-32 bg-background border-border hover:border-primary/50 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 h-16">
         <Globe className="w-4 h-4 mr-2" />
         <SelectValue placeholder="Select country" />
-      </SelectTrigger>
+      </SelectTrigger> 
       <SelectContent className="bg-card border-border">
         {COUNTRY_CODES.map((item) => (
           <SelectItem
