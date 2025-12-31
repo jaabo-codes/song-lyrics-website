@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Heart, Play, ArrowUp, ArrowDown, Minus } from "lucide-react"
 
+
 type SongTrend = "up" | "down" | "steady"
 
 type FeaturedSong = {
